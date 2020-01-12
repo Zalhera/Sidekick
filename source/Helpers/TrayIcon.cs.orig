@@ -4,7 +4,11 @@ using Sidekick.Windows.ApplicationLogs;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System;
+<<<<<<< HEAD
 using Sidekick.Helpers.POEPriceInfoAPI;
+=======
+using Sidekick.Helpers.Localization;
+>>>>>>> origin/develop
 
 namespace Sidekick.Helpers
 {
