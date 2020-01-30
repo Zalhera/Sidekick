@@ -13,6 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="LeagueOverlay\LeagueOverlayResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LeagueOverlayResources.resx</DependentUpon>
+    </Compile>
     <Compile Update="Settings\SettingResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -21,6 +26,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="LeagueOverlay\LeagueOverlayResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LeagueOverlayResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Settings\SettingResources.fr.resx">
       <Generator></Generator>
     </EmbeddedResource>
