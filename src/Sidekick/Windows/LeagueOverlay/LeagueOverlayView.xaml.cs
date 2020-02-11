@@ -52,7 +52,7 @@ namespace Sidekick.Windows.LeagueOverlay
 
             tabPageSizeDictionary = new Dictionary<TabItem, int[]>()
             {
-                { tabItemIncursion, new[] { 980, 1050 } },
+                { tabItemIncursion, new[] { 980, 1850 } },
                 { tabItemDelve, new[] { 425, 1015 } },
                 { tabItemBetrayal, new[] { 520, 1200 } },
                 { tabItemBlight, new[] { 605, 1165 } },
@@ -150,7 +150,8 @@ namespace Sidekick.Windows.LeagueOverlay
         private void TabControlLeagueOverlay_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             CurrentPage = tabControlLeagueOverlay.SelectedItem as TabItem;
-            SetCurrentPageWindowSize();
+            AdjustPageSize(gridIncursion);
+            //SetCurrentPageWindowSize();
         }
 
         private void SetCurrentPageWindowSize()
@@ -167,6 +168,14 @@ namespace Sidekick.Windows.LeagueOverlay
                 tabControlLeagueOverlay.Height = windowSize[0];
                 tabControlLeagueOverlay.Width = windowSize[1];
             }
+        }
+
+        private void AdjustPageSize(Grid grid)
+        {
+            Height = grid.Height;
+            Width = grid.Width;
+            tabControlLeagueOverlay.Height = grid.Height;
+            tabControlLeagueOverlay.Width = grid.Width;
         }
 
         private void SetTextBlockList(TextBlock block, IEnumerable<string> items)
@@ -189,6 +198,21 @@ namespace Sidekick.Windows.LeagueOverlay
         {
             Hide();
             e.Cancel = true;
+        }
+
+        private void AdjustGridSize(Grid grid)
+        {
+            foreach(var col in grid.ColumnDefinitions)
+            {
+                foreach(var row in grid.RowDefinitions)
+                {
+                    row.Height = new GridLength(1, GridUnitType.Auto);
+                }
+
+                col.Width = new GridLength(1, GridUnitType.Auto);
+            }
+
+            grid.UpdateLayout();
         }
 
         private void UpdateFossilRarityDictionary()
@@ -393,6 +417,8 @@ namespace Sidekick.Windows.LeagueOverlay
             textBlockRoyalMeetingRoomModifiers.Text = IncursionResources.RoyalMeetingRoomModifiers;
             textBlockHallOfLords.Text = IncursionResources.HallOfLords;
             textBlockThroneOfAtziri.Text = IncursionResources.ThroneOfAtziri;
+
+            AdjustGridSize(gridIncursion);
         }
 
         private void UpdateBetrayalUIText()

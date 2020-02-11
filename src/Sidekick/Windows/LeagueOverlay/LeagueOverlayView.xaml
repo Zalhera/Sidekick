@@ -47,46 +47,46 @@
                 Background="{DynamicResource SolidColorBrush_Background}"
                 BorderBrush="{DynamicResource SolidColorBrush_Primary}"
                 Header="Incursion">
-                <Grid
+                <Grid x:Name="gridIncursion"
                     Margin="0"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
                     Background="{DynamicResource SolidColorBrush_Background}">
                     <Grid.RowDefinitions>
-                        <RowDefinition Name="rowHeader" Height="25" />
-                        <RowDefinition Name="rowGuardhouse" Height="30" />
-                        <RowDefinition Name="rowWorkshop" Height="35" />
-                        <RowDefinition Name="rowExplosivesRoom" Height="35" />
-                        <RowDefinition Name="rowSplinterResearchLab" Height="50" />
-                        <RowDefinition Name="rowVault" Height="30" />
-                        <RowDefinition Name="rowSparringRoom" Height="35" />
-                        <RowDefinition Name="rowArmourersWorkshop" Height="35" />
-                        <RowDefinition Name="rowJewellersWorkshop" Height="30" />
-                        <RowDefinition Name="rowSurveyorsStudy" Height="30" />
-                        <RowDefinition Name="rowGemcuttersWorkshop" Height="35" />
-                        <RowDefinition Name="rowTormentCells" Height="35" />
-                        <RowDefinition Name="rowStrongboxChamber" Height="35" />
-                        <RowDefinition Name="rowHallOfMettle" Height="50" />
-                        <RowDefinition Name="rowSacrificalChamber" Height="50" />
-                        <RowDefinition Name="rowStorageRoom" Height="35" />
-                        <RowDefinition Name="rowCorruptionChamber" Height="30" />
-                        <RowDefinition Name="rowShrineOfEmpowerment" Height="30" />
-                        <RowDefinition Name="rowTempestGenerator" Height="30" />
-                        <RowDefinition Name="rowPoisionGarden" Height="35" />
-                        <RowDefinition Name="rowTrapWorkshop" Height="35" />
-                        <RowDefinition Name="rowPoolsOfRestoration" Height="35" />
-                        <RowDefinition Name="rowFlameWorkshop" Height="30" />
-                        <RowDefinition Name="rowLightningWorkshop" Height="30" />
-                        <RowDefinition Name="rowHatchery" Height="30" />
-                        <RowDefinition Name="rowRoyalMeetingRom" Height="30" />
-                        <RowDefinition Name="rowIncursionLegend" Height="25" />
+                        <RowDefinition Name="rowHeader" Height="*" />
+                        <RowDefinition Name="rowGuardhouse" Height="*" />
+                        <RowDefinition Name="rowWorkshop" Height="*" />
+                        <RowDefinition Name="rowExplosivesRoom" Height="*" />
+                        <RowDefinition Name="rowSplinterResearchLab" Height="*" />
+                        <RowDefinition Name="rowVault" Height="*" />
+                        <RowDefinition Name="rowSparringRoom" Height="*" />
+                        <RowDefinition Name="rowArmourersWorkshop" Height="*" />
+                        <RowDefinition Name="rowJewellersWorkshop" Height="*" />
+                        <RowDefinition Name="rowSurveyorsStudy" Height="*" />
+                        <RowDefinition Name="rowGemcuttersWorkshop" Height="*" />
+                        <RowDefinition Name="rowTormentCells" Height="*" />
+                        <RowDefinition Name="rowStrongboxChamber" Height="*" />
+                        <RowDefinition Name="rowHallOfMettle" Height="*" />
+                        <RowDefinition Name="rowSacrificalChamber" Height="*" />
+                        <RowDefinition Name="rowStorageRoom" Height="*" />
+                        <RowDefinition Name="rowCorruptionChamber" Height="*" />
+                        <RowDefinition Name="rowShrineOfEmpowerment" Height="*" />
+                        <RowDefinition Name="rowTempestGenerator" Height="*" />
+                        <RowDefinition Name="rowPoisionGarden" Height="*" />
+                        <RowDefinition Name="rowTrapWorkshop" Height="*" />
+                        <RowDefinition Name="rowPoolsOfRestoration" Height="*" />
+                        <RowDefinition Name="rowFlameWorkshop" Height="*" />
+                        <RowDefinition Name="rowLightningWorkshop" Height="*" />
+                        <RowDefinition Name="rowHatchery" Height="*" />
+                        <RowDefinition Name="rowRoyalMeetingRom" Height="*" />
+                        <RowDefinition Name="rowIncursionLegend" Height="*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition x:Name="columnLevel1" Width="140" />
-                        <ColumnDefinition x:Name="columnLevel2" Width="175" />
-                        <ColumnDefinition x:Name="columnLevel3" Width="150" />
-                        <ColumnDefinition x:Name="columnContains" Width="300" />
-                        <ColumnDefinition x:Name="columnModifiers" Width="260" />
+                        <ColumnDefinition x:Name="columnLevel1" Width="*" />
+                        <ColumnDefinition x:Name="columnLevel2" Width="*" />
+                        <ColumnDefinition x:Name="columnLevel3" Width="*" />
+                        <ColumnDefinition x:Name="columnContains" Width="*" />
+                        <ColumnDefinition x:Name="columnModifiers" Width="*" />
                     </Grid.ColumnDefinitions>
                     <!--  Header  -->
                     <Rectangle
