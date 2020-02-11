@@ -214,7 +214,7 @@ Accuracy Rank 3 Recipe</value>
 Animate Guardian Recipe</value>
   </data>
   <data name="ArmourersWorkshopModifiers" xml:space="preserve">
-    <value>10/20/30 &amp; more Monster Life</value>
+    <value>10/20/30 % more Monster Life</value>
   </data>
   <data name="JewellersWorkshop" xml:space="preserve">
     <value>Jeweller's Workshop</value>

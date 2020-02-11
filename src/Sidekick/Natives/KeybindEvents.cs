@@ -95,6 +95,9 @@ namespace Sidekick.Natives
 
         private bool NativeKeyboard_OnKeyDown(string input)
         {
+            Task<bool> taskX = null;
+            ExecuteKeybind("Open League Overview", configuration.Key_OpenLeagueOverview, input, OnOpenLeagueOverview, ref taskX);
+
             if (Enabled && (nativeProcess.IsPathOfExileInFocus || nativeProcess.IsSidekickInFocus))
             {
                 Enabled = false;

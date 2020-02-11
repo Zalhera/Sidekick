@@ -98,7 +98,7 @@ namespace Sidekick.Localization.Leagues.Incursion {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 10/20/30 &amp; more Monster Life.
+        ///   Looks up a localized string similar to 10/20/30 % more Monster Life.
         /// </summary>
         public static string ArmourersWorkshopModifiers {
             get {
