@@ -4167,7 +4167,7 @@
                     <Rectangle
                         Grid.Row="1"
                         Grid.Column="17"
-                        Fill="{DynamicResource VeryLowValueColor}"
+                        Fill="{DynamicResource MediumValueColor}"
                         Stroke="Black" Grid.ColumnSpan="2" Margin="0,0,64,0" />
                     <Label
                         x:Name="labelVaganName"
@@ -4181,7 +4181,7 @@
                     <Rectangle
                         Grid.Row="2"
                         Grid.Column="17"
-                        Fill="{DynamicResource VeryLowValueColor}"
+                        Fill="{DynamicResource MediumValueColor}"
                         Stroke="Black" Grid.ColumnSpan="2" Margin="0,0,64,0" />
                     <TextBlock
                         Name="textBlockVaganTransportation"
@@ -4199,7 +4199,7 @@
                     <Rectangle
                         Grid.Row="3"
                         Grid.Column="17"
-                        Fill="{DynamicResource VeryLowValueColor}"
+                        Fill="{DynamicResource MediumValueColor}"
                         Stroke="Black" Grid.ColumnSpan="2" Margin="0,0,64,0" />
                     <TextBlock
                         Name="textBlockVaganFortification"
@@ -4217,7 +4217,7 @@
                     <Rectangle
                         Grid.Row="4"
                         Grid.Column="17"
-                        Fill="{DynamicResource VeryLowValueColor}"
+                        Fill="{DynamicResource MediumValueColor}"
                         Stroke="Black" Grid.ColumnSpan="2" Margin="0,0,64,0" />
                     <TextBlock
                         Name="textBlockVaganResearch"
@@ -4235,7 +4235,7 @@
                     <Rectangle
                         Grid.Row="5"
                         Grid.Column="17"
-                        Fill="{DynamicResource VeryLowValueColor}"
+                        Fill="{DynamicResource MediumValueColor}"
                         Stroke="Black" Grid.ColumnSpan="2" Margin="0,0,64,0" />
                     <TextBlock
                         Name="textBlockVaganIntervention"
